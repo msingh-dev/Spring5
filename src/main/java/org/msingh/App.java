@@ -9,14 +9,14 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Car swift = new Swift();
-		Car corolla = new Corrola();
+//		Car swift = new Swift();
+//		Car corolla = new Corrola();
 
-		String swiftString = swift.specs();
+	//	String swiftString = swift.specs();
 
 		//System.out.println(swiftString);
 
-		Car mycar = new Swift();
+		//Car mycar = new Swift();
 
 		//System.out.println(mycar.specs());
 
@@ -30,9 +30,9 @@ public class App {
 		// this is called dependency injection as we are injecting the object to the class object.
 		//This is done without using new keyword.
 		
-		Car myCar = context.getBean("swift",Car.class); 
+		Car myCar = context.getBean("corrola",Car.class); 
  
-		System.out.println(mycar.specs());
+		System.out.println(myCar.specs());
 		context.close();
 
 	}
